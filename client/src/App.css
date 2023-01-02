@@ -1,0 +1,158 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f0f2f5;
+}
+
+div#root {
+  position: relative;
+}
+
+.site-layout-content {
+  padding: 24px;
+  background: #fff;
+}
+
+div.ant-row{
+  padding: 10px 0px;
+}
+
+div.ant-col {
+  padding: 6px;
+  max-height: 100vh;
+  overflow: scroll;
+  margin-top: 0.4vh;
+}
+
+/************* NAVBAR *************/
+#components-layout-demo-top .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
+
+div.logo{
+  height: 100%;
+  float: left;
+  min-width: fit-content;
+}
+
+ul.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-dark{
+  float: right;
+}
+
+h1.logo{
+  font-size: x-large;
+  color: rgba(255, 255, 255, 0.671);
+}
+
+b.logo{
+  color: whitesmoke;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+  background-color: #001529;
+}
+
+span.ant-menu-title-content:hover{
+  color: white;
+}
+
+span.ant-menu-title-content{
+  color: rgba(255, 255, 255, 0.671);
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background-color: inherit;
+  color: white;
+}
+
+/************* FOOTER *************/
+footer.ant-layout-footer {
+  bottom: 0;
+  width: 100%;
+}
+
+/************* EDA TAB *************/
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+/************* PREDICT TAB *************/
+.ant-input-number {
+  width: fit-content;
+}
+
+img#modalimg {
+  width: 30%;
+  float: left;
+  padding: 8px;
+}
+
+div.typewriter {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 6px;
+}
+
+.typewriter h2 {
+  width: 30ch;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: fit-content% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+
+/************* ANALYSE TAB *************/
+div.analyseBar {
+  position: sticky;
+  top: 0px;
+  background: white;
+  z-index: 1;
+}
+
+h1.logoAnalyse{
+  font-size: x-large;
+  color: #001529;
+}
+
+div.logo.logoAnalyse{
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-light {
+    justify-content: right;
+}
+
+section {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 3px 0;
+}
+
+h2 {
+  margin-top: -75px;
+  padding-top: 75px;
+  display: inline-block;
+}
